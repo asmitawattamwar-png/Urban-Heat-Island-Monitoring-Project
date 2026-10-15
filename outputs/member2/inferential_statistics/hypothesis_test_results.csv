@@ -1,0 +1,5 @@
+test,statistic,p_value,effect_size,effect_size_name,alpha,interpretation
+One-way ANOVA: temperature across Land Cover groups,2.5023483666930133,0.058639721563704554,0.014909513527436188,eta-squared,0.05,No statistically significant group difference detected
+Kruskal-Wallis: temperature across Land Cover groups,7.406111921040974,0.060020551642425965,,not calculated,0.05,No statistically significant distribution difference detected
+Welch t-test: high vs low greenness temperature means,0.7649363045689072,0.4446720940502253,0.06841798301894238,Cohen's d (high minus low),0.05,No statistically significant mean difference detected
+Mann-Whitney U: high vs low greenness temperature distributions,32479.0,0.44694771898566443,,not calculated,0.05,No statistically significant distribution difference detected

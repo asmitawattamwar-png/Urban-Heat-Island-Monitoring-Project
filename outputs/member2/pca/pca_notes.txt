@@ -1,0 +1,6 @@
+Input rows used: 500
+Features used (10): Elevation (m), Population Density (people/km²), Energy Consumption (kWh), Air Quality Index (AQI), Urban Greenness Ratio (%), Health Impact (Mortality Rate/100k), Wind Speed (km/h), Humidity (%), Annual Rainfall (mm), GDP per Capita (USD)
+Features excluded: City Name, Land Cover, Temperature (°C), Latitude, Longitude (if present).
+Numeric predictors were standardized using StandardScaler before PCA.
+PCA components are linear combinations of the standardized predictors. Loading signs can flip without changing the PCA solution.
+This tabular dataset has no raster grid or pixel coordinates tied to spectral measurements, so a true spatial PC-score map cannot be produced from these columns alone.

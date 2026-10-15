@@ -1,0 +1,7 @@
+Input rows used: 500
+Features used (10): Elevation (m), Population Density (people/km²), Energy Consumption (kWh), Air Quality Index (AQI), Urban Greenness Ratio (%), Health Impact (Mortality Rate/100k), Wind Speed (km/h), Humidity (%), Annual Rainfall (mm), GDP per Capita (USD)
+Components required to retain >=90% squared-singular-value energy: 9
+Energy retained at k=9: 0.918507
+The reconstruction RMSE and MAE are reported on the standardized scale, so errors are comparable across differently scaled variables.
+PCA and SVD are related: for the standardized matrix X, right singular vectors are PCA directions, and squared singular values normalized by their sum give the PCA explained-variance ratios (up to numerical precision and the variance denominator convention).
+The saved 90%-energy reconstruction is inverse-transformed to the original units for readability; it is an approximation, not cleaned source data.

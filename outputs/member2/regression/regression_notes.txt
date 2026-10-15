@@ -1,0 +1,15 @@
+Target: Temperature (°C)
+Rows used: 500
+Evaluation: fixed 80/20 holdout (random_state=42); model selection used 5-fold CV on training data only.
+Selected by lowest mean CV RMSE: Land-cover-only Ridge
+Mean CV RMSE (selected model): 7.2349 °C
+Test R2 (selected model): -0.0527
+Test MAE (selected model): 6.1184 °C
+Test RMSE (selected model): 7.1077 °C
+Test R2 (training-mean baseline): -0.0278
+
+INTERPRETATION / LIMITATION:
+The target has near-zero linear correlations with the available numerical predictors. The data also has no documented date/season, satellite bands, NDVI, NDBI, or albedo.
+If the selected model does not outperform the mean baseline, this is evidence that the supplied dataset does not support reliable temperature prediction. Do not manipulate the target, leak it into features, or report a fabricated high R2.
+The source records appear synthetic or at least lack sufficient provenance for a satellite-based UHI claim. Treat all results as exploratory until the dataset source and measurement definitions are verified.
+Adjusted R2 on a held-out test set is included as a descriptive statistic only; cross-validation and holdout RMSE are more useful for model comparison.

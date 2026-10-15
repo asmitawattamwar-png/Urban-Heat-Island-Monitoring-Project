@@ -1,0 +1,13 @@
+Inferential statistics notes
+-----------------------------
+Input: cleaned_uhi_dataset.csv
+Rows used: 500
+Temperature mean (C): 22.4119
+Temperature SD (C): 7.1752
+Land-cover categories: Green Space, Industrial, Urban, Water
+Greenness median split threshold (%): 33.3248
+No date/season/year columns exist in the supplied dataset, so temporal hypothesis tests were not performed.
+The dataset appears to contain synthetic city-style records; interpret p-values as conditional on this dataset and do not claim causal or satellite-derived conclusions.
+ANOVA assumes independent observations, approximately normal residuals within groups, and comparable variances. Kruskal-Wallis is a rank-based alternative.
+Welch's t-test does not assume equal group variances; Mann-Whitney is a rank-based alternative.
+The greenness groups use the sample median and are not official ecological classifications.
